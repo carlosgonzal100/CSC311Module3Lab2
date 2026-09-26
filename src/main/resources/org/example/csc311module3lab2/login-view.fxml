@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.csc311module3lab2.LoginController"
+           prefWidth="700"
+           prefHeight="450"
+           stylesheets="@login.css"
+           styleClass="login-background">
+
+    <VBox alignment="CENTER"
+          spacing="16"
+          maxWidth="320"
+          styleClass="login-container">
+
+        <Label text="Welcome Back"
+               styleClass="login-title"/>
+
+        <Label text="Enter your credentials to continue"
+               styleClass="login-subtitle"/>
+
+        <VBox spacing="8"
+              styleClass="login-form">
+
+            <Label text="Username"
+                   styleClass="field-label"/>
+
+            <TextField fx:id="usernameField"
+                       promptText="Enter username"
+                       styleClass="login-field"/>
+
+            <Label text="Password"
+                   styleClass="field-label"/>
+
+            <PasswordField fx:id="passwordField"
+                           promptText="Enter password"
+                           styleClass="login-field"/>
+
+            <Button text="Login"
+                    onAction="#handleLogin"
+                    maxWidth="Infinity"
+                    styleClass="login-button"/>
+
+        </VBox>
+
+    </VBox>
+
+</StackPane>
