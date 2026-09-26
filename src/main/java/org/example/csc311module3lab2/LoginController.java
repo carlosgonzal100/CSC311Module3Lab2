@@ -6,6 +6,11 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import java.io.IOException;
+
 
 public class LoginController {
 
@@ -17,11 +22,29 @@ public class LoginController {
 
     @FXML
     private void handleLogin(ActionEvent event) {
-        // No authentication or validation.
-        // The next screen has not been specified yet.
 
-        Button button = (Button) event.getSource();
-        Stage stage = (Stage) button.getScene().getWindow();
-        stage.close();
+        try {
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("dashboard-view.fxml")
+            );
+
+            Parent root = loader.load();
+
+            DashboardController dashboardController =
+                    loader.getController();
+
+            dashboardController.setUsername(usernameField.getText());
+
+            Button button = (Button) event.getSource();
+
+            Stage stage =
+                    (Stage) button.getScene().getWindow();
+
+            stage.setScene(new Scene(root, 700, 450));
+            stage.setTitle("Dashboard");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
