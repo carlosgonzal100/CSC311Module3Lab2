@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.yourapp.SplashController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="700"
+      prefHeight="450"
+      stylesheets="@splash.css"
+      styleClass="splash-background">
+
+    <Label text="APP NAME"
+           styleClass="app-title"/>
+
+    <Label text="Your app tagline goes here"
+           styleClass="app-tagline"/>
+
+</VBox>
