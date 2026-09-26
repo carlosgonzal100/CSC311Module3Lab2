@@ -34,7 +34,14 @@ it then updated the splash.css file to include similar styling to the text for t
 to give the screen a consistent color theme. then, it gave me code for the splash controller screen,
 which was used to have the progress bar fill up in a course of 3 seconds, once full the login screen
 would automatically load up. it then created a new fxml file called login-view.fxml, the new screen
-for the login screen.
+for the login screen. A login.css file was given to me to stylize the login screen similarly to the
+splash screen. Finally, i was given code for the LoginController.java file so the login screen can go
+to the landing screen after the user entered a username and password.
+
+"now i need a login screen that allows users to enter their username and password. once again,
+funcionalilty dousnt matter, so the user will be able to enter anything into the textboxes and
+press a button to proceed no matter what. this login screen shows up after the splash screen
+after a little delay. add a progress bar in the splash screen to show that the app is loading"
  */
 
 public class HelloApplication extends Application {
