@@ -12,3 +12,23 @@
     -fx-font-size: 16px;
     -fx-text-fill: #CBD5E1;
 }
+
+.loading-bar {
+    -fx-accent: #38BDF8;
+}
+
+.loading-bar > .track {
+    -fx-background-color: #475569;
+    -fx-background-radius: 8;
+}
+
+.loading-bar > .bar {
+    -fx-background-color: #38BDF8;
+    -fx-background-radius: 8;
+    -fx-background-insets: 0;
+}
+
+.loading-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: #CBD5E1;
+}
