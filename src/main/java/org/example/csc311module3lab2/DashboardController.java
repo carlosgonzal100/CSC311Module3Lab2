@@ -27,7 +27,7 @@ public class DashboardController {
     public void initialize() {
 
         // Attempts to load the GIF only if you have added it.
-        var imageURL = getClass().getResource("images/your-image.gif");
+        var imageURL = getClass().getResource("silly-cat-dance.gif");
 
         if (imageURL != null) {
             Image image = new Image(imageURL.toExternalForm());
