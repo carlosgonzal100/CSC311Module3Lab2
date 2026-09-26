@@ -1,0 +1,42 @@
+.dashboard-background {
+    -fx-background-color: #F8FAFC;
+}
+
+.top-bar {
+    -fx-background-color: #1E293B;
+    -fx-padding: 18 25 18 25;
+}
+
+.dashboard-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-button {
+    -fx-background-color: #0284C7;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #0369A1;
+}
+
+.dashboard-content {
+    -fx-padding: 40;
+}
+
+.welcome-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: #475569;
+}
+
+.username-text {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E293B;
+}
