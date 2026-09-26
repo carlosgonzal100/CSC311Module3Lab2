@@ -50,6 +50,13 @@ screen and a dashboard.css file to go along with it for styling. i then recieved
 ,which was used to handle any interaction made in the dropdown menu and used to display the username, if any.
 if the user entered no username, the app will display noname instead. LoginController.java file was updated
 to load the landing screen and send the username to that screen instead of just closing the app.
+
+"finally, create me a landing screen that welcomes the user with their username and an image that i gif
+that i will be able to insert. if the user has no name put the default name as no name. there will be
+a label for the landing screen called dashboard at the top. along with a drop down menu that allows
+the user a few options, dashboard, collection, friends, profile, and close app. of course they would
+not go to anyother pages, just close the drop down menu once one of those are clicked and keep them
+on the dashboard, unless they click close app, which will stop the program from running"
  */
 
 public class HelloApplication extends Application {
