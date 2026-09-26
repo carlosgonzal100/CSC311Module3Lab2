@@ -42,6 +42,14 @@ to the landing screen after the user entered a username and password.
 funcionalilty dousnt matter, so the user will be able to enter anything into the textboxes and
 press a button to proceed no matter what. this login screen shows up after the splash screen
 after a little delay. add a progress bar in the splash screen to show that the app is loading"
+
+3. gave this prompt to CHATGPT to help me create a landing screen with a welcoming message and
+a dropdown menu that wont lead to anything, it will keep you on the homepage unless you click the
+close app option in the dropdown menu. CHATGPT gave me the dashboard-view.fxml file for the landing
+screen and a dashboard.css file to go along with it for styling. i then recieved code for the DashboardController.java file
+,which was used to handle any interaction made in the dropdown menu and used to display the username, if any.
+if the user entered no username, the app will display noname instead. LoginController.java file was updated
+to load the landing screen and send the username to that screen instead of just closing the app.
  */
 
 public class HelloApplication extends Application {

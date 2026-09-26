@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.csc311module3lab2.DashboardController"
+            prefWidth="700"
+            prefHeight="450"
+            stylesheets="@dashboard.css"
+            styleClass="dashboard-background">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              spacing="20"
+              styleClass="top-bar">
+
+            <Label text="Dashboard"
+                   styleClass="dashboard-title"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <MenuButton text="Menu"
+                        styleClass="menu-button">
+
+                <items>
+                    <MenuItem text="Dashboard"
+                              onAction="#handleMenuOption"/>
+
+                    <MenuItem text="Collection"
+                              onAction="#handleMenuOption"/>
+
+                    <MenuItem text="Friends"
+                              onAction="#handleMenuOption"/>
+
+                    <MenuItem text="Profile"
+                              onAction="#handleMenuOption"/>
+
+                    <SeparatorMenuItem/>
+
+                    <MenuItem text="Close App"
+                              onAction="#handleCloseApp"/>
+                </items>
+
+            </MenuButton>
+
+        </HBox>
+    </top>
+
+    <!-- DASHBOARD CONTENT -->
+    <center>
+        <VBox alignment="CENTER"
+              spacing="20"
+              styleClass="dashboard-content">
+
+            <Label text="Welcome,"
+                   styleClass="welcome-text"/>
+
+            <Label fx:id="usernameLabel"
+                   text="No Name"
+                   styleClass="username-text"/>
+
+            <ImageView fx:id="welcomeImage"
+                       fitWidth="250"
+                       fitHeight="200"
+                       preserveRatio="true"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>
