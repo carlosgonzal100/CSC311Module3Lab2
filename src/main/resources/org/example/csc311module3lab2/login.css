@@ -1,0 +1,63 @@
+
+.login-background {
+    -fx-background-color: #1E293B;
+}
+
+.login-container {
+    -fx-alignment: center;
+}
+
+.login-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.login-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #CBD5E1;
+}
+
+.login-form {
+    -fx-background-color: #F8FAFC;
+    -fx-background-radius: 12;
+    -fx-padding: 24;
+}
+
+.field-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #334155;
+}
+
+.login-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.login-field:focused {
+    -fx-border-color: #0284C7;
+    -fx-border-width: 2;
+}
+
+.login-button {
+    -fx-background-color: #0284C7;
+    -fx-background-radius: 6;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 11;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #0369A1;
+}
+
+.login-button:pressed {
+    -fx-background-color: #075985;
+}
